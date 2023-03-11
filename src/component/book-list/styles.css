@@ -1,0 +1,96 @@
+.booklist-container{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    background-color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.card-list{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* padding: 20px; */
+}
+
+.add-book{
+    font-size: 18px;
+    text-align: right;
+}
+
+.icon-plus{
+    margin-left: 10px;
+}
+
+/* --pagination-- */
+.pagination_rounded, .pagination_square {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.pagination_rounded ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pagination_rounded li:first-child {
+    margin-left: 0px;
+}
+
+.pagination_rounded ul li {
+    float: left;
+    margin-left: 20px;
+}
+
+.pagination_rounded ul li a:hover {
+    background: black;
+    color: #fff;
+    border: 1px solid black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.pagination_rounded .prev {
+    margin-left: 0px;
+    border-radius: 35px;
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+}
+
+
+.pagination_rounded ul li a {
+    font-size: 18px;
+    float: left;
+    color: black;
+    border-radius: 50%;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.pagination_rounded .prev i {
+    margin-right: 10px;
+}
+
+.pagination_rounded .next {
+    border-radius: 35px;
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.visible-xs {
+    display: none!important;
+}

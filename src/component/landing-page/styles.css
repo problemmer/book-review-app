@@ -1,0 +1,85 @@
+.landing-page-container{
+    /* padding-top: 20px; */
+    background-color: #F0EFED;
+}
+
+.landing-page-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+}
+
+.book-2{
+    width: 360px;
+}
+
+.text-book{
+    line-height: 1px;
+}
+
+.book-2-title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    color: #000000;
+}
+
+.book-2-author{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    color: #A5ABAD;
+}
+
+.text{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 555px;
+}
+
+.title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.info{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    color: #343330;
+    margin-bottom: 25px;
+}
+
+.search{
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    background-color: #FFFFFF;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+    color: #808080;
+}
+
+.button-search{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background: #00A96C;
+    border-color: #00A96C;
+}

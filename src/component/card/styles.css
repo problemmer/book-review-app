@@ -1,0 +1,45 @@
+.card-wrapper{
+    width: 210px;
+    height: 304px;
+    background: #FAFAFA;
+    box-shadow: 0px 4px 50px 5px rgba(0, 0, 0, 0.25);
+    font-size: 10px;
+    margin: 10px;
+}
+
+.dots{
+    margin-bottom: -13px;
+    margin-left: 190px;
+}
+
+
+.book{
+    width: 150px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.info-book{
+    display: flex;
+    flex-direction: column;
+    line-height: 1px;
+}
+
+.price-rating-book{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title-book{
+    margin-top: 0px;
+}
+
+.horizontal-line{
+    margin-left: 17px;
+
+    background-color: #00000059;
+    height: 1px;
+    width: 175px;
+}

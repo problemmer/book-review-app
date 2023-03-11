@@ -1,0 +1,21 @@
+.footer-container{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    top: 78px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F0EFED;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    /* text-align: center; */
+    color: #000000;
+}
+
+.content{
+    line-height: 10px;
+}

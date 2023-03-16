@@ -14,16 +14,39 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Books.init({
-    title: DataTypes.STRING,
-    author: DataTypes.STRING,
-    about_author: DataTypes.STRING,
-    review: DataTypes.STRING,
-    price: DataTypes.STRING,
-    rating: DataTypes.STRING,
-    picture: DataTypes.STRING
+    title: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    author: {
+      type : DataTypes.STRING,
+      allowNull : false
+    },
+    about_author: { 
+      type : DataTypes.STRING,
+      allowNull : true
+    },
+    review: {
+      type : DataTypes.STRING,
+      allowNull : false
+    },
+    price: {
+      type : DataTypes.STRING,
+      allowNull : false
+    },
+    rating: {
+      type : DataTypes.STRING,
+      allowNull : false
+    },
+    picture: {
+      type : DataTypes.STRING,
+      allowNull : true
+    }
   }, {
     sequelize,
     modelName: 'Books',
+    tableName: 'books',
+    timestamps: true
   });
   return Books;
 };

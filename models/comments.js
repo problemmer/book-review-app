@@ -14,11 +14,19 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Comments.init({
-    name: DataTypes.STRING,
-    comment: DataTypes.STRING
+    name: {
+      type : DataTypes.STRING,
+      allowNull : false
+    },
+    comment: {
+      type : DataTypes.STRING,
+      allowNull : false
+    }
   }, {
     sequelize,
     modelName: 'Comments',
+    tableName: 'comments',
+    timestamps : true
   });
   return Comments;
 };

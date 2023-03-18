@@ -11,6 +11,12 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      this.belongsTo(models.book)
+      
+      // db.comments.belongsTo(db.books, {
+      //   foreignKey: "book_id",
+      //   as: "Books",
+      // });
     }
   }
   Comments.init({
@@ -19,13 +25,16 @@ module.exports = (sequelize, DataTypes) => {
       allowNull : false
     },
     comment: {
-      type : DataTypes.STRING,
+      type : DataTypes.TEXT,
       allowNull : false
-    }
+    },
+    book_id: {
+     type : DataTypes.INTEGER
+    },
   }, {
     sequelize,
-    modelName: 'Comments',
-    // tableName: 'comments',
+    modelName: 'comment',
+    tableName: 'comments',
     timestamps : true
   });
   return Comments;

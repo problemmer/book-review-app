@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      this.hasMany(models.comment)
     }
   }
   Books.init({
@@ -23,11 +24,11 @@ module.exports = (sequelize, DataTypes) => {
       allowNull : false
     },
     about_author: { 
-      type : DataTypes.STRING,
+      type : DataTypes.TEXT,
       allowNull : true
     },
     review: {
-      type : DataTypes.STRING,
+      type : DataTypes.TEXT,
       allowNull : false
     },
     price: {
@@ -44,8 +45,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {
     sequelize,
-    modelName: 'Books',
-    // tableName: 'books',
+    modelName: 'book',
+    tableName: 'books',
     timestamps: true
   });
   return Books;

@@ -1,0 +1,114 @@
+{
+    "tables": {
+        "books": {
+            "tableName": "books",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "title": {
+                    "allowNull": false,
+                    "field": "title",
+                    "seqType": "Sequelize.STRING"
+                },
+                "author": {
+                    "allowNull": false,
+                    "field": "author",
+                    "seqType": "Sequelize.STRING"
+                },
+                "about_author": {
+                    "allowNull": true,
+                    "field": "about_author",
+                    "seqType": "Sequelize.TEXT"
+                },
+                "review": {
+                    "allowNull": false,
+                    "field": "review",
+                    "seqType": "Sequelize.TEXT"
+                },
+                "price": {
+                    "allowNull": false,
+                    "field": "price",
+                    "seqType": "Sequelize.STRING"
+                },
+                "rating": {
+                    "allowNull": false,
+                    "field": "rating",
+                    "seqType": "Sequelize.STRING"
+                },
+                "picture": {
+                    "allowNull": true,
+                    "field": "picture",
+                    "seqType": "Sequelize.STRING"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                }
+            },
+            "indexes": []
+        },
+        "comments": {
+            "tableName": "comments",
+            "schema": {
+                "id": {
+                    "allowNull": false,
+                    "primaryKey": true,
+                    "autoIncrement": true,
+                    "field": "id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "name": {
+                    "allowNull": false,
+                    "field": "name",
+                    "seqType": "Sequelize.STRING"
+                },
+                "comment": {
+                    "allowNull": false,
+                    "field": "comment",
+                    "seqType": "Sequelize.TEXT"
+                },
+                "book_id": {
+                    "field": "book_id",
+                    "seqType": "Sequelize.INTEGER"
+                },
+                "createdAt": {
+                    "allowNull": false,
+                    "field": "createdAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "updatedAt": {
+                    "allowNull": false,
+                    "field": "updatedAt",
+                    "seqType": "Sequelize.DATE"
+                },
+                "bookId": {
+                    "allowNull": true,
+                    "references": {
+                        "model": "books",
+                        "key": "id"
+                    },
+                    "onDelete": "SET NULL",
+                    "onUpdate": "CASCADE",
+                    "field": "bookId",
+                    "seqType": "Sequelize.INTEGER"
+                }
+            },
+            "indexes": []
+        }
+    },
+    "path": "C:\\web\\be_bookreview\\migrations\\_current.json",
+    "backupPath": "C:\\web\\be_bookreview\\migrations\\_current_bak.json",
+    "exists": false,
+    "revision": 1
+}

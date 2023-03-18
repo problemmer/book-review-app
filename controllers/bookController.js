@@ -1,5 +1,6 @@
 const db = require('../models');
-const Book = db.books;
+const Book = db.book;
+const Comment = db.comment;
 
 //create new book
 exports.create = (req,res) => {
@@ -13,7 +14,7 @@ exports.create = (req,res) => {
     const book = {
         title: req.body.title,
         author: req.body.author,
-        aboutAuthor : req.body.aboutAuthor,
+        about_author : req.body.about_author,
         review : req.body.review,
         price : req.body.price,
         rating : req.body.rating,
@@ -122,4 +123,28 @@ exports.delete = (req, res) => {
             data: null,
         });
     });
+
+    //get one book with comments
+    exports.findOne = (req,res) => {
+        const id = req.params.id;
+        Book.findOne({
+            include : [{
+                model: Comment,
+                as: 'comment'
+            }],
+            where: { id : id}
+        })
+        .then((books) => {
+            res.json({
+                message: "Comments on this book displayed",
+                data: books,
+            });
+        })
+        .catch((err) => {
+            res.status(500).json({
+                message: err.message || "Error occurred",
+                data: null,
+            });
+        });
+    };
 };

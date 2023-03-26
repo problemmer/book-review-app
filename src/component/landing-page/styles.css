@@ -64,7 +64,7 @@
     height: 50px;
     left: 0px;
     top: 0px;
-    border-radius: 0px;
+    border-radius: 10px;
     background-color: #FFFFFF;
     display: flex;
     padding-left: 20px;
@@ -82,4 +82,19 @@
     color: #FFFFFF;
     background: #00A96C;
     border-color: #00A96C;
+    border-bottom: 2px;
+    border-right: 2px;
+    border-top: 2px;
+    border-left: 2px;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* padding-top: 2px;
+    padding-bottom: 2px; */
+}
+
+.button-search:hover{
+    background-color: #F0EFED;
+    color: #000000;
+    transition: 0.7s;
 }

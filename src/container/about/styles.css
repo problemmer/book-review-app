@@ -1,0 +1,32 @@
+.about-content{
+    padding-top: 100px;
+    padding-bottom: 45px;
+    padding-left: 108px;
+    padding-right: 108px;
+    text-align: justify;
+}
+
+.about-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    background-color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 24px;
+}
+
+.about-subtitle{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}

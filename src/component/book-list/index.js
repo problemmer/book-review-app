@@ -4,14 +4,75 @@ import './styles.css'
 import { FaPlusCircle } from 'react-icons/fa';
 import { BsArrowLeft } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
+import Modal from 'react-modal';
+
+
+const customStyles = {
+  content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)',
+      background: '#E8E9F8',
+      width: '600px',
+      borderRadius: '10px',
+    },
+  };
+
+Modal.setAppElement('#root');
 
 function BookList() {
+
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // subtitle.style.color = '#f00';
+  }
+
+  function closeButton() {
+    setIsOpen(false);
+  }
+
   return (
     <div className='booklist-container'>
+        
         Best books to read
         <div className="add-book">
-          Add Book
-          <FaPlusCircle className='icon-plus'/>
+          <div  onClick={openModal}>
+            Add Book
+            <FaPlusCircle className='icon-plus'/>
+          </div>
+          
+            <Modal
+              isOpen={modalIsOpen}
+              onAfterOpen={afterOpenModal}
+              onRequestClose={closeButton}
+              style={customStyles}
+              contentLabel="add modal"
+            >
+              <h2 className='modal-title'>Add Book</h2>
+              <form className='input-add-book'>
+                <input className='input' placeholder="Book name/title"/>
+                <input className='input' placeholder="Author name"/>
+                <input className='input' placeholder="Price"/>
+                <input className='input' placeholder="Link book cover"/>
+                <input className='input' placeholder="About author"/>
+                <input className='input' placeholder="Review"/>
+
+              </form>
+              <div className='button-sc'>
+                <button onClick={closeButton} className="button-save">Save</button>
+                <button onClick={closeButton} className="button-close">Close</button>
+              </div>
+              
+            </Modal>
         </div>
         <div className='card-list'>
             <Card/>
@@ -28,7 +89,6 @@ function BookList() {
               <li>
                   <a href="#" className="prev">
                     <BsArrowLeft/>
-                    {/* <i className="fa fa-angle-left" aria-hidden="true"></i>  */}
                   </a>
               </li>
               <li><a href="#">1</a></li>

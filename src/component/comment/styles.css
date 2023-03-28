@@ -1,0 +1,19 @@
+/* .comments-container{
+    
+} */
+
+.comments-container{
+    background-color: #F0EFED;
+}
+
+.comments-content{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}

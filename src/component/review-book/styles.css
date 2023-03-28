@@ -1,0 +1,25 @@
+.review-book-container{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+    background-color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.detail-book{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    color: #000000;
+    text-align: justify;
+    
+}

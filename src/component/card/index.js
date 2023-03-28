@@ -17,7 +17,6 @@ const Card = (props) => {
         <div>
             <div className='card-wrapper'>
                 <div className='dots'>
-                    
                     <details class="dropdown">
                     <summary role="button">
                     <BsThreeDotsVertical size={15}/>

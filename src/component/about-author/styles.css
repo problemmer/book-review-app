@@ -1,0 +1,114 @@
+.about-author-page-container{
+    background-color: #F0EFED;
+}
+
+.about-author-page-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+}
+
+.book-author{
+    width: 360px;
+    border-radius: 10px;
+    margin-top: 107px;
+    margin-right: 90px;
+    width: 206px;
+    height: 336px;
+    padding-top: 65px;
+}
+
+.text-book{
+    line-height: 1px;
+}
+
+.book-author-title{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    color: #000000;
+}
+
+.book-author-author{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    color: #A5ABAD;
+}
+
+.text{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 555px;
+}
+
+.title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.info{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    color: #343330;
+    margin-bottom: 25px;
+}
+
+.search{
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+    color: #808080;
+}
+
+.button-search{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background: #00A96C;
+    border-color: #00A96C;
+    border-bottom: 2px;
+    border-right: 2px;
+    border-top: 2px;
+    border-left: 2px;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.button-search:hover{
+    background-color: #F0EFED;
+    color: #000000;
+    transition: 0.7s;
+}
+
+.price-rating-book{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-book{
+  color: #00A96C;
+}

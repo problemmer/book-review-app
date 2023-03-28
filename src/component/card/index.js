@@ -3,9 +3,15 @@ import './styles.css'
 import book4 from '../../assets/image/jpg/book-4.jpg'
 import { FaStar } from 'react-icons/fa';
 import { BsThreeDotsVertical } from "react-icons/bs";
-
+import { useNavigate } from "react-router-dom";
 
 const Card = (props) => {
+
+    let navigate = useNavigate();
+
+    function handleClickPreview() {
+        navigate('/preview')
+    }
 
     return (
         <div>
@@ -22,17 +28,18 @@ const Card = (props) => {
                 </ul>
                 </details>
                 </div>
-                <img className='book' src={book4} alt="" />
-                <div className='info-book'>
-                    <p className='title-book'>{props.title}</p>
-                    <div className='horizontal-line'/>
-                    <div className='price-rating-book'>
-                        <p className='price-book'>{props.price}</p>
-                        <p className='rating-book'>{props.rating} <FaStar/> </p>
+                <div onClick={handleClickPreview}>
+                    <img className='book' src={book4} alt="" />
+                    <div className='info-book'>
+                        <p className='title-book'>{props.title}</p>
+                        <div className='horizontal-line'/>
+                        <div className='price-rating-book'>
+                            <p className='price-book'>{props.price}</p>
+                            <p className='rating-book'>{props.rating} <FaStar/> </p>
+                        </div>
+                        
                     </div>
-                    
                 </div>
-                
             </div>
         </div>
     )

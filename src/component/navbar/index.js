@@ -1,7 +1,6 @@
 import React from 'react'
 import './styles.css'
 import logo from '../../assets/image/svg/book-review-logo.svg'
-// import { FaStream } from 'react-icons/fa';
 import { useNavigate } from "react-router-dom";
 
 function Navbar() {

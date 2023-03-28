@@ -25,15 +25,10 @@ Modal.setAppElement('#root');
 
 function BookList() {
 
-  let subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal() {
     setIsOpen(true);
-  }
-
-  function afterOpenModal() {
-    // subtitle.style.color = '#f00';
   }
 
   function closeButton() {
@@ -52,7 +47,6 @@ function BookList() {
           
             <Modal
               isOpen={modalIsOpen}
-              onAfterOpen={afterOpenModal}
               onRequestClose={closeButton}
               style={customStyles}
               contentLabel="add modal"

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './container/home';
 import About from './container/about';
+import Preview from './container/preview';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path='/*' element={<Home/>}/>
         <Route path='/home' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/preview' element={<Preview/>}/>
       </Routes>
     </BrowserRouter>
   )

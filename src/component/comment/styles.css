@@ -1,12 +1,15 @@
-/* .comments-container{
-    
-} */
 
 .comments-container{
+    padding-top: 30px;
     background-color: #F0EFED;
 }
 
-.comments-content{
+.comment-total{
+    margin-left: 200px;
+}
+
+.comment-title{
+    
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -15,5 +18,34 @@
     color: #000000;
     align-items: center;
     text-align: center;
-    margin-top: 50px;
+    
+}
+
+.button-comment-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-comment{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 36px;
+    color: #FFFFFF;
+    background: #00A96C;
+    border-color: #00A96C;
+    border-bottom: 2px;
+    border-right: 2px;
+    border-top: 2px;
+    border-left: 2px;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.button-comment:hover{
+    background-color: #F0EFED;
+    color: #000000;
+    transition: 0.7s;
 }

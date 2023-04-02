@@ -6,17 +6,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 80px;
+    padding-left: 156px;
 }
 
 .book-author{
     width: 360px;
     border-radius: 10px;
-    margin-top: 107px;
     margin-right: 90px;
     width: 206px;
     height: 336px;
-    padding-top: 65px;
 }
 
 .text-book{
@@ -40,8 +38,6 @@
 }
 
 .text{
-    padding-top: 80px;
-    padding-bottom: 80px;
     width: 555px;
 }
 
@@ -111,4 +107,10 @@
 
 .price-book{
   color: #00A96C;
+}
+
+.image{
+    padding-top: 36px;
+    padding-right: 92px;
+    padding-bottom: 36px;
 }

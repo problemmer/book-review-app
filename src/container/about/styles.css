@@ -1,8 +1,5 @@
 .about-content{
-    padding-top: 100px;
-    padding-bottom: 45px;
-    padding-left: 108px;
-    padding-right: 108px;
+    padding: 36px 144px 72px;
     text-align: justify;
 }
 
@@ -16,8 +13,6 @@
     background-color: #FFFFFF;
     align-items: center;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 24px;
 }
 
 .about-subtitle{

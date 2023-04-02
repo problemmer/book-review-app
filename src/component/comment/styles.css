@@ -1,7 +1,7 @@
 
 .comments-container{
-    padding-top: 30px;
-    background-color: #F0EFED;
+    padding: 36px 0;
+    background-color: #ECEADF;
 }
 
 .comment-total{
@@ -9,14 +9,14 @@
 }
 
 .comment-title{
-    
+    margin: 0;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 36px;
     color: #000000;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
     
 }

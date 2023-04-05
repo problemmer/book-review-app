@@ -23,3 +23,11 @@
     text-align: justify;
     
 }
+
+.btn-more{
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    color: rgb(158, 137, 255);
+    cursor: pointer;
+}

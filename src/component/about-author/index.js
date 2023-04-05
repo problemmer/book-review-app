@@ -9,7 +9,7 @@ const AboutAuthor = (props) =>  {
         <div className='about-author-page-content'>
             <div className='text'>
                 <div className='title'>About the Author</div>
-                <div className='info'>Robin Sharma is a Canadian writer, best known for his The Monk Who Sold His Ferrari book series. Sharma worked as a litigation lawyer until age 25, when he self-published MegaLiving, a book on stress management and spirituality.</div>
+                <div className='author-info'>Robin Sharma is a Canadian writer, best known for his The Monk Who Sold His Ferrari book series. Sharma worked as a litigation lawyer until age 25, when he self-published MegaLiving, a book on stress management and spirituality.</div>
                 <div className='price-rating-book'>
                     <p className='price-book'>{props.price}</p>
                     <p className='rating-book'>{props.rating} <FaStar/> </p>
@@ -31,7 +31,7 @@ const AboutAuthor = (props) =>  {
 
 AboutAuthor.defaultProps ={
     title: 'title',
-    price: '2$',
+    price: '$8.5',
     rating: '5'
 }
 

@@ -1,51 +1,67 @@
-
-.comments-container{
-    padding: 36px 0;
-    background-color: #ECEADF;
+.comments-container {
+  padding: 36px 0;
+  background-color: #eceadf;
 }
 
-.comment-total{
-    margin-left: 200px;
+.comment-total {
+  margin-left: 200px;
 }
 
-.comment-title{
-    margin: 0;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 36px;
-    color: #000000;
-    /* align-items: center; */
-    text-align: center;
+.comment-title {
+  margin: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.button-comment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-comment {
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 36px;
+  color: #ffffff;
+  background: #00a96c;
+  border-color: #00a96c;
+  border-bottom: 2px;
+  border-right: 2px;
+  border-top: 2px;
+  border-left: 2px;
+  border-radius: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.button-comment:hover {
+  background-color: #f0efed;
+  color: #000000;
+  transition: 0.7s;
+}
+
+.input {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;  
+  font-style: normal;
+  font-weight: 400;
+  font-size: medium;
+  width: 694px;
+  min-width: 694px;
+  max-width: 694px;
+  height: 72px;
+}
+
+.submit-btn{
+    margin-top: 20px;
+}
+/* .inputBtn {
     
-}
-
-.button-comment-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.button-comment{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-size: 18px;
-    line-height: 36px;
-    color: #FFFFFF;
-    background: #00A96C;
-    border-color: #00A96C;
-    border-bottom: 2px;
-    border-right: 2px;
-    border-top: 2px;
-    border-left: 2px;
-    border-radius: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.button-comment:hover{
-    background-color: #F0EFED;
-    color: #000000;
-    transition: 0.7s;
-}
+} */

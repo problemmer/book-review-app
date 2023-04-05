@@ -2,6 +2,28 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './styles.css'
 import CommentCl from '../coment-cl'
+import ava from "../../assets/image/png/ava.png";
+import { BsThreeDotsVertical } from "react-icons/bs";
+
+function NewComment(props) {
+  return (
+    <div>
+      <div className="line" />
+      <div className="ava-comment">
+        <div className="avatar">
+          <img className="ava" src={ava} alt="avatar" />
+        </div>
+        <div className="name-comment">
+          <p className="name">olaf</p>
+          <textarea placeholder='Comment here...' name="postContent" className='input'/>
+        </div>
+        <div className="submit-btn">
+          <button type='submit' className='inputBtn'>Submit</button>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function Comment(props) {
   return (
@@ -16,6 +38,7 @@ function Comment(props) {
           <CommentCl/>
           <CommentCl/>
           <CommentCl/>
+          {NewComment()}
         </div>
         <div className='button-comment-container'>
           <button className='button-comment'>

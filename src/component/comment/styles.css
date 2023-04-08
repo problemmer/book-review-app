@@ -43,6 +43,10 @@
 }
 
 .button-comment:hover {
+  cursor: pointer;
+}
+
+.button-comment:hover {
   background-color: #f0efed;
   color: #000000;
   transition: 0.7s;
@@ -54,7 +58,7 @@
   font-weight: 400;
   font-size: medium;
   width: 694px;
-  min-width: 694px;
+  min-width: auto;
   max-width: 694px;
   height: 72px;
 }
@@ -62,6 +66,20 @@
 .submit-btn{
     margin-top: 20px;
 }
-/* .inputBtn {
-    
-} */
+
+.inputBtn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.inputBtn:hover{
+  background-color: #148e18;
+  cursor: pointer;
+}

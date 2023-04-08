@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import './styles.css'
 import CommentCl from '../coment-cl'
@@ -26,6 +26,8 @@ function NewComment(props) {
 }
 
 function Comment(props) {
+  const [showInput, setShowInput] = useState(false)
+
   return (
     <div className='comments-container'>
       <div className='comments-content'>
@@ -38,11 +40,11 @@ function Comment(props) {
           <CommentCl/>
           <CommentCl/>
           <CommentCl/>
-          {NewComment()}
+          {showInput? NewComment() : ""}
         </div>
         <div className='button-comment-container'>
-          <button className='button-comment'>
-              Comment
+          <button className='button-comment' onClick={()=> setShowInput(!showInput)}>
+              {showInput? "Cancel" : "Comment"}
           </button>
         </div>
         

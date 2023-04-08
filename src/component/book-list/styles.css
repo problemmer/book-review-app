@@ -8,7 +8,7 @@
     background-color: #FFFFFF;
     align-items: center;
     text-align: center;
-    margin: 50px;
+    margin: 36px 50px 0;
 }
 
 .card-list{
@@ -24,8 +24,19 @@
     text-align: right;
 }
 
+.add{
+    font-weight: 600;
+}
+.add:hover{
+    cursor: pointer;
+}
+
 .icon-plus{
-    margin-left: 10px;
+    margin-left: 4px;
+}
+
+.icon-plus:hover{
+    cursor: pointer;
 }
 
 /* --pagination-- */

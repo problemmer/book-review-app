@@ -15,7 +15,7 @@ function NewComment(props) {
         </div>
         <div className="name-comment">
           <p className="name">olaf</p>
-          <textarea placeholder='Comment here...' name="postContent" className='input'/>
+          <textarea className='input' placeholder='Comment here...' name="postContent"/>
         </div>
         <div className="submit-btn">
           <button type='submit' className='inputBtn'>Submit</button>

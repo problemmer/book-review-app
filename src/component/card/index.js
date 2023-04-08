@@ -32,9 +32,9 @@ const Card = (props) => {
                     <div className='info-book'>
                         <p className='title-book'>{props.title}</p>
                         <div className='horizontal-line'/>
-                        <div className='price-rating-book'>
+                        <div className='price-rating'>
                             <p className='price-book'>{props.price}</p>
-                            <p className='rating-book'>{props.rating} <FaStar/> </p>
+                            <p className='rating-book'>{props.rating} <span><FaStar/></span> </p>
                         </div>
                         
                     </div>
@@ -46,7 +46,7 @@ const Card = (props) => {
 
 Card.defaultProps ={
     title: 'title',
-    price: '2$',
+    price: '$2',
     rating: '5'
 }
 

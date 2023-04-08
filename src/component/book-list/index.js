@@ -40,9 +40,9 @@ function BookList() {
         
         Best books to read
         <div className="add-book">
-          <div  onClick={openModal}>
-            Add Book
-            <FaPlusCircle className='icon-plus'/>
+          <div onClick={openModal}>
+            <p><span className='add'>Add Book</span> <span><FaPlusCircle className='icon-plus'/></span></p>
+            
           </div>
           
             <Modal

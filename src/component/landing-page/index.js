@@ -7,10 +7,10 @@ function LandingPage() {
     <div className='landing-page-container'>
         <div className='landing-page-content'>
             <div className='text'>
-                <div className='title'>Welcome Readers! Read amazing insights of wonderful books here!</div>
+                <div className='title'>Read amazing insights of wonderful books here!</div>
                 <div className='info'>The most comprehensive book reviews with thousands of books from various genres that will help you find the best books to read.</div>
                 <div className='search'>
-                    <p>Search for book name, author, etc.</p>
+                    <input className='input-search' placeholder='Search for book name, author, etc.'/>
                     <button className='button-search'>
                         Search
                     </button>

@@ -14,10 +14,12 @@
     font-size: 10px;
     margin: 10px;
     border-radius: 10px;
+    font-size: small;
 }
 
 .card-wrapper:hover{
     box-shadow: 0px 4px 50px 5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 
 .dots{
@@ -38,21 +40,24 @@
     line-height: 1px;
 }
 
-.price-rating-book{
-    display: flex;
+.price-rating{
+  display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    justify-content: space-between;
+    margin: 0 20px;
 }
 
 .price-book{
   color: #00A96C;
 }
 
+.rating-book{
+  margin: 5px 0;
+}
+
 .title-book{
     margin-top: 0px;
+    font-size:small;
 }
 
 .horizontal-line{

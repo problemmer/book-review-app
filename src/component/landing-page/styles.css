@@ -6,11 +6,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 80px;
+    padding-left: 180px;
 }
 
 .book-2{
-    width: 360px;
+    width: 318px;
 }
 
 .text-book{
@@ -34,7 +34,7 @@
 }
 
 .text{
-    padding-top: 80px;
+    padding-top: 72px;
     padding-bottom: 80px;
     width: 555px;
 }
@@ -94,4 +94,12 @@
     background-color: #F0EFED;
     color: #000000;
     transition: 0.7s;
+    cursor: pointer;
+}
+
+.input-search{
+    border: none;
+    width: 324px;
+    height: 36px;
+    outline: none;
 }
